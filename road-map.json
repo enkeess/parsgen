@@ -1,5 +1,5 @@
 {
-	"base": "https://raw.githubusercontent.com/enkeess/lexangen/master/build",
+	"base": "https://raw.githubusercontent.com/enkeess/parsgen/master/build",
 	"data" : {
 		"folder": "",
 		"files": [
