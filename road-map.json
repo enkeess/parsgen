@@ -1,0 +1,42 @@
+{
+	"base": "https://raw.githubusercontent.com/enkeess/lexangen/master/build",
+	"data" : {
+		"folder": "",
+		"files": [
+			"Makefile",
+			"main.cpp"
+		],
+
+		"children": [
+			{	
+				"folder": "include",
+				"files": [
+					"Graph.h",
+					"Mark.h",
+					"Parser.h",
+					"Scanner.h",
+					"State.h",
+					"Transition.h",
+					"Dependencies.h",
+					"STATE_NAME.cpp"
+				],
+				"children": []
+			},
+
+			{
+				"folder": "src",
+				"files": [
+					"Graph.cpp",
+					"Mark.cpp",
+					"Parser.cpp",
+					"Scanner.cpp",
+					"State.cpp",
+					"Transition.cpp",
+					"Dependencies.cpp",
+					"STATE_NAME.cpp"
+				],
+				"children": []
+			}
+		]
+	}
+}

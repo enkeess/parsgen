@@ -1,0 +1,100 @@
+{
+    "graph" : [
+        {   
+            "name" : "_main",
+            "start" : "A", 
+            "end"   : [
+                            "B", "_C"
+                        ], 
+            "states": [
+                        {
+                            "name" : "A",
+                            "transitions" : [
+                                {
+                                    "to"   :  "A",
+                                    "mark"  :  {
+                                            "dir" : "OPEN",
+                                            "id"  : "b"
+                                    },
+                                    "labels" :  [
+                                            "a"
+                                    ]
+                                },
+                                {
+                                    "to"   :  "B",
+                                    "mark"  :  {
+                                                "dir" : "CLOSE",
+                                                "id"  : "b"
+                                    },
+                                    "labels" :  [
+                                                "b"
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "name" : "B",
+                            "transitions" : [
+                                {
+                                    "to"   :  "B",
+                                    "mark"  :  {
+                                        "dir" : "CLOSE",
+                                        "id"  : "b"
+                                    },
+                                    "labels" :  [
+                                                "b"
+                                    ]
+                                },
+
+                                {
+                                    "to"   :  "_C",
+                                    "mark"  :  null,
+                                    "labels" :  [
+                                                "c"
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "name" : "_C",
+                            "transitions" : [
+                                {
+                                    "to"   :  "B",
+                                    "mark"  :  null,
+                                    "labels" :  [
+                                                "b"
+                                    ]
+                                }
+                            ]
+                        }
+
+            ]
+        },
+
+        {
+            "name" : "_C",
+            "start" : "A",  
+            "end"   : [
+                        "A"
+                    ],  
+            "states": [
+                        {
+                            "name" : "A",
+                            "transitions" : [
+                                {
+                                    "to"   :  "A",
+                                    "mark"  :  null,
+                                    "labels" :  [
+                                                "c"
+                                    ]
+                                }
+                            ]
+                        }
+            ]
+        
+        }
+    ]   
+
+}
