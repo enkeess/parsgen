@@ -16,9 +16,7 @@
 					"Parser.h",
 					"Scanner.h",
 					"State.h",
-					"Transition.h",
-					"Dependencies.h",
-					"STATE_NAME.cpp"
+					"Transition.h"
 				],
 				"children": []
 			},
@@ -31,9 +29,7 @@
 					"Parser.cpp",
 					"Scanner.cpp",
 					"State.cpp",
-					"Transition.cpp",
-					"Dependencies.cpp",
-					"STATE_NAME.cpp"
+					"Transition.cpp"
 				],
 				"children": []
 			}
